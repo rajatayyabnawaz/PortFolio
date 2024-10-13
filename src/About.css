@@ -1,0 +1,102 @@
+/* About.css */
+.about-container {
+    padding: 50px;
+    background-image: url('./creative-geometric-design-space_53876-89787.avif'); /* Background image remains unchanged */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ll {
+    color: white;
+}
+
+.about-content {
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent black background */
+    position: relative; /* Ensure that profile block positioning is relative to this container */
+}
+
+.profile-block {
+    text-align: center; /* Center the profile image */
+    margin-bottom: 20px; /* Space below the profile block */
+}
+
+.profile-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border: 2px solid white; /* Optional border around the image */
+    border-radius: 30px;
+}
+
+.about-title {
+    font-size: 36px;
+    color: white; /* Ensure the title is white */
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white; /* Ensure the text is white */
+    margin-bottom: 30px;
+}
+
+.skills-title,
+.experience-title,
+.projects-title,
+.aspirations-title {
+    font-size: 28px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.skills,
+.projects-item,
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    font-size: 18px;
+    color: white; /* Ensure skill text is white */
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 16px;
+    color: white;
+}
+
+.projects-item p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.aspirations-title {
+    margin-top: 30px; /* Space above the aspirations section */
+}
+
+/* New styles for the image box */
+.image-box {
+    margin: 20px 0; /* Space around the image box */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for the box */
+    text-align: center; /* Center-align the image and text inside */
+}
+
+.image-box img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 8px; /* Match the box’s border radius */
+}

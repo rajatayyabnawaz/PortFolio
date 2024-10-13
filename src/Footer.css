@@ -1,0 +1,63 @@
+.footer {
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  padding: 40px 20px; /* Padding */
+  text-align: center; /* Center text */
+  font-size: 14px; /* Font size */
+}
+
+.footer-container {
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content */
+}
+
+.footer-nav {
+  margin-bottom: 20px; /* Space below nav */
+}
+
+.footer-nav a {
+  color: #fff; /* White links */
+  margin: 0 15px; /* Margin between links */
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Bold text */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-nav a:hover,
+.footer-nav .active {
+  color: #3498db; /* Change color on hover or when active */
+}
+
+.social-links {
+  margin: 20px 0; /* Space above and below social links */
+}
+
+.social-link {
+  color: #fff; /* White icons */
+  margin: 0 10px; /* Space between icons */
+  font-size: 20px; /* Size of icons */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-link:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+.footer-info {
+  margin: 20px 0; /* Space above and below info */
+}
+
+.footer-info a {
+  color: #3498db; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-info a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer-copy {
+  margin-top: 20px; /* Space above copyright */
+  font-size: 12px; /* Smaller font size */
+}

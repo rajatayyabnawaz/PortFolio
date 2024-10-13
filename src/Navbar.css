@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: black; /* Dark gray */
+    justify-content: space-between; /* Space between logo and toggle button */
+    padding: 0 20px;
+    position: fixed; /* Keep navbar fixed */
+    top: 0;
+    left: 0;
+    right: 0; /* Ensure navbar stretches across the width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.logo {
+    height: 70px; /* Adjust as needed */
+}
+
+.logo-img {
+    height: 100%;
+    width: auto; /* Maintain aspect ratio */
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease; /* Smooth transition for opening/closing */
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px; /* Space between items */
+}
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link.active {
+    color: white; 
+    border-bottom: 2px solid red; /* Active link underline */
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: row; /* Stack elements vertically */
+        height: auto;
+    }
+
+    .links {
+        display: none; /* Hide links by default */
+        width: 100%;
+        flex-direction: column; /* Stack links vertically */
+        text-align: center;
+        background-color: black;
+        position: absolute;
+        top: 70px; /* Adjust to be below the navbar */
+        left: 0;
+        transition: max-height 0.3s ease;
+        max-height: 0; /* Hide the links */
+        overflow: hidden;
+    }
+
+    .links.active {
+        display: flex; /* Show links when active */
+        max-height: 500px; /* Adjust height as needed */
+    }
+
+    ul {
+        flex-direction: column; /* Stack links vertically */
+        padding: 10px 0; /* Optional padding */
+        margin: 0; /* Reset margin */
+    }
+
+    li {
+        margin: 10px 0; /* Space between vertical items */
+    }
+
+    .toggle-button {
+        display: flex;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 10px; /* Space between toggle button and links */
+    }
+}
